@@ -88,7 +88,7 @@ function CreateListing() {
 		if (geolocationEnabled) {
 			// Use Position Stack API instead GeoCoding API
 			const response = await fetch(
-				`http://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITION_STACK_API_KEY}
+				`https://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITION_STACK_API_KEY}
 				&query=${address}`
 			);
 
